@@ -3,5 +3,7 @@ export {
   Buildings as Company,
   Envelope,
   Star,
+  Bell,
+  CaretDown,
 } from '@styled-icons/boxicons-regular/';
 export { LocationMarker } from '@styled-icons/heroicons-outline/';
