@@ -29,11 +29,11 @@ export default createGlobalStyle`
 
   :root {
     --primary: #24292e;
-    --light-primary: #586069:
-    --
+    --light-primary: #586069;
     --white: #fff;
     --highlight: #f9826c;
     --text: #1b1f23;
+    --light-text: #aaa;
     --link-background: rgba(209,213,218,.5);
     --button-background: rgba(27,31,35,.15);
     --link: #0366d6;

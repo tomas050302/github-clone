@@ -5,5 +5,6 @@ export {
   Star,
   Bell,
   CaretDown,
+  Menu,
 } from '@styled-icons/boxicons-regular/';
 export { LocationMarker } from '@styled-icons/heroicons-outline/';

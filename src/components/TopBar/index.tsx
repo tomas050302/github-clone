@@ -2,6 +2,8 @@ import React from 'react';
 
 import {
   Container,
+  MobileActions,
+  HamburgerIcon,
   Actions,
   GithubIcon,
   SearchInputContainer,
@@ -20,6 +22,12 @@ import {
 const TopBar: React.FC = () => {
   return (
     <Container>
+      <MobileActions>
+        <HamburgerIcon />
+        <GithubIcon />
+        <NotificationsIcon />
+      </MobileActions>
+
       <Actions>
         <GithubIcon />
         <SearchInputContainer>
