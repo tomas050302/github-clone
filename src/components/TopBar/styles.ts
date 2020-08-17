@@ -7,7 +7,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   background: var(--primary);
-  height: 80px;
+  height: 59px;
+  padding: 0 10px;
 `;
 
 export const MobileActions = styled.div`
@@ -23,8 +24,8 @@ export const MobileActions = styled.div`
 `;
 
 const iconCSS = css`
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   color: var(--white);
 
   > svg {
@@ -43,6 +44,8 @@ export const Actions = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    width: max(620px, 50%);
   }
 `;
 
@@ -51,14 +54,17 @@ export const GithubIcon = styled(Github)`
 `;
 
 export const SearchInputContainer = styled.div`
-  width: 260px;
-  height: 30px;
+  width: 270px;
+  height: 28px;
 
-  background: var(--light-primary);
+  background: var(--input-background);
   border-radius: 5px;
   padding: 3px 8px;
 
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const SearchInput = styled.input`
@@ -66,45 +72,79 @@ export const SearchInput = styled.input`
   height: 100%;
 
   &::placeholder {
+    font-size: 14px;
     color: var(--light-text);
   }
 `;
 
-export const SearchIcon = styled.span`
+export const SearchIcon = styled.img`
   position: absolute;
 
-  color: var(--light-text);
+  color: var(--primary);
   right: 5px;
-  border: 1px solid var(--light-text);
-  border-radius: 5px;
-  padding: 5px 8px;
-  font-size: 10px;
 `;
 
 export const MenuOption = styled.span`
-  font-size: 16px;
+  font-size: 14px;
   color: var(--white);
   margin-right: 10px;
-
-  .pulls {
-    content: 'Pulls';
-  }
 `;
 
 export const UserInfo = styled.div`
   display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 120px;
+  }
 `;
 
 export const NotificationsIcon = styled(Bell)`
-  ${iconCSS}
+  width: 18px;
+  height: 18px;
+  color: var(--white);
+
+  > svg {
+    fill: var(--white);
+  }
 `;
 
-export const AddContainer = styled.div``;
+export const AddContainer = styled.div`
+  display: flex;
+  flex-direction: row;
 
-export const AddIcon = styled.span``;
+  align-items: center;
+`;
 
-export const DownArrowIcon = styled(CaretDown)``;
+export const AddIcon = styled.span`
+  font-size: 22px;
+  font-weight: bold;
+`;
 
-export const UserAvatarContainer = styled.div``;
+export const DownArrowIcon = styled(CaretDown)`
+  width: 18px;
+  height: 18px;
+  color: var(--white);
 
-export const UserAvatar = styled.div``;
+  > svg {
+    fill: var(--white);
+  }
+`;
+
+export const UserAvatarContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+`;
+
+export const UserAvatar = styled.div`
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+  background: var(--content);
+`;

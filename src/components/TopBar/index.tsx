@@ -32,7 +32,7 @@ const TopBar: React.FC = () => {
         <GithubIcon />
         <SearchInputContainer>
           <SearchInput placeholder='Search or jump to...' />
-          <SearchIcon>/</SearchIcon>
+          <SearchIcon src='https://github.githubassets.com/images/search-key-slash.svg' />
         </SearchInputContainer>
         <MenuOption>Pull Requests</MenuOption>
         <MenuOption>Issues</MenuOption>

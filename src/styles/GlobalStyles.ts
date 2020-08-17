@@ -33,9 +33,11 @@ export default createGlobalStyle`
     --white: #fff;
     --highlight: #f9826c;
     --text: #1b1f23;
-    --light-text: #aaa;
+    --light-text: #e1e4e8;
     --link-background: rgba(209,213,218,.5);
     --button-background: rgba(27,31,35,.15);
+    --input-background: rgba(225, 228, 232, 0.2); 
+    --content: #ccc;
     --link: #0366d6;
     --action: #2ea44f;
     --javascript: #f1e05a;
