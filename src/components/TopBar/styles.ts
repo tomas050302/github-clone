@@ -10,9 +10,6 @@ export const Container = styled.div`
 
   height: 59px;
   padding: 0 10px;
-
-  position: sticky;
-  top: 0;
 `;
 
 export const MobileActions = styled.div`

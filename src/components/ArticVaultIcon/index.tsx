@@ -1,10 +1,8 @@
 import React from 'react';
 
-// import { Container } from './styles';
-
 const ArticVaultIcon: React.FC = () => {
   return (
-    <svg width='16' height='16'>
+    <svg width='16' height='16' fill='#6a737d'>
       <path
         d='M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939
         7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7

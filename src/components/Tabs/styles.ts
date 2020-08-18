@@ -8,7 +8,7 @@ export const Container = styled.div`
   height: 34px;
   margin-top: 42px;
 
-  border-bottom: 1px solid var(--light-primary);
+  border-bottom: 1px solid var(--lines);
 `;
 
 export const Wrapper = styled.div`
@@ -16,10 +16,11 @@ export const Wrapper = styled.div`
   flex-direction: row;
 
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+
+  margin-left: 15px;
 
   @media (min-width: 768px) {
-    justify-content: flex-start;
     margin-left: calc(min(20%, 320px) + 60px);
   }
 `;
@@ -66,7 +67,7 @@ const iconCSS = css`
 
   flex-shrink: 0;
 
-  fill: var(--light-text);
+  fill: var(--icon);
 `;
 
 export const BookIcon = styled(Book)`
@@ -87,6 +88,6 @@ export const PackagesIcon = styled(Cube)`
   ${iconCSS}
 
   > path {
-    fill: var(--light-text);
+    fill: var(--icon);
   }
 `;
