@@ -4,7 +4,7 @@ import { Container, Wrapper } from './styles';
 
 import TopBar from '../TopBar';
 import Tabs from '../Tabs';
-import SideBar from '../SideBar';
+import UserInformation from '../UserInformation';
 import Main from '../Main';
 
 const Layout: React.FC = () => {
@@ -12,10 +12,9 @@ const Layout: React.FC = () => {
     <Container>
       <TopBar />
       <Wrapper>
-        <Tabs>
-          <SideBar />
-          <Main />
-        </Tabs>
+        <UserInformation />
+        <Tabs />
+        <Main />
       </Wrapper>
     </Container>
   );

@@ -34,6 +34,7 @@ export default createGlobalStyle`
     --highlight: #f9826c;
     --text: #1b1f23;
     --light-text: #e1e4e8;
+    --secondary-text: #666;
     --link-background: rgba(209,213,218,.5);
     --button-background: rgba(27,31,35,.15);
     --input-background: rgba(225, 228, 232, 0.2); 

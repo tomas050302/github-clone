@@ -15,3 +15,5 @@ export { LocationMarker } from '@styled-icons/heroicons-outline/';
 export { InsertChartOutlined as Chart } from 'styled-icons/material-rounded';
 
 export { Cube } from 'styled-icons/ionicons-outline/';
+
+export { EmojiSmileUpsideDown as Emoji } from 'styled-icons/bootstrap/';

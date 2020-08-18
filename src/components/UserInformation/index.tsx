@@ -4,7 +4,10 @@ import ArticVaultIcon from '../ArticVaultIcon';
 
 import {
   Container,
+  UserContainer,
   UserAvatar,
+  State,
+  EmojiIcon,
   UsernamesContainer,
   UserName,
   UserNickname,
@@ -26,18 +29,24 @@ import {
   ProBadge,
 } from './styles';
 
-const SideBar: React.FC = () => {
+const UserInformation: React.FC = () => {
   return (
     <Container>
-      <UserAvatar />
-      <UsernamesContainer>
-        <UserName>Tomás Lopes</UserName>
-        <UserNickname>tomas050302</UserNickname>
-      </UsernamesContainer>
+      <UserContainer>
+        <UserAvatar />
+        <UsernamesContainer>
+          <UserName>Tomás Lopes</UserName>
+          <UserNickname>tomas050302</UserNickname>
+        </UsernamesContainer>
+      </UserContainer>
+      <State>
+        <EmojiIcon />
+        <span>Focusing</span>
+      </State>
       <UserBio>
         Student | 18 Years | Informática e Tecnologias Multimédia
       </UserBio>
-      <EditInfoButton>Edit Info</EditInfoButton>
+      <EditInfoButton>Edit Profile</EditInfoButton>
       <FollowStats>
         <Stat>
           <PersonsIcon />
@@ -95,4 +104,4 @@ const SideBar: React.FC = () => {
   );
 };
 
-export default SideBar;
+export default UserInformation;

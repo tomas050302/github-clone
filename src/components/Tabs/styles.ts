@@ -12,11 +12,16 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  margin-left: calc(min(20%, 320px) + 60px);
-
   display: flex;
   flex-direction: row;
+
   align-items: center;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+    margin-left: calc(min(20%, 320px) + 60px);
+  }
 `;
 
 export const Tab = styled.button`
