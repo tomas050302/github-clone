@@ -12,6 +12,6 @@ export {
 
 export { LocationMarker } from '@styled-icons/heroicons-outline/';
 
-export { InsertChart as Projects } from 'styled-icons/material-outlined';
+export { InsertChartOutlined as Chart } from 'styled-icons/material-rounded';
 
 export { Cube } from 'styled-icons/ionicons-outline/';

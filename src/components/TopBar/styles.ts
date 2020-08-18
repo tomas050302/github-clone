@@ -9,6 +9,9 @@ export const Container = styled.div`
   background: var(--primary);
   height: 59px;
   padding: 0 10px;
+
+  position: sticky;
+  top: 0;
 `;
 
 export const MobileActions = styled.div`
@@ -88,6 +91,8 @@ export const MenuOption = styled.span`
   font-size: 14px;
   color: var(--white);
   margin-right: 10px;
+
+  cursor: pointer;
 `;
 
 export const UserInfo = styled.div`

@@ -1,23 +1,67 @@
 import styled, { css } from 'styled-components';
 
-import { Book, Repositories, Projects, Cube } from '../../styles/Icons';
+import { Book, Repositories, Chart, Cube } from '../../styles/Icons';
 
 export const Container = styled.div`
   width: 100vw;
 
-  border-bottom: var(--light-primary);
+  height: 34px;
+  margin-top: 42px;
+
+  border-bottom: 1px solid var(--light-primary);
 `;
 
 export const Wrapper = styled.div`
-  width: calc(100% - min(20%, 320px));
-  margin-left: min(20%, 320px);
+  margin-left: calc(min(20%, 320px) + 60px);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
-export const Tab = styled.div``;
+export const Tab = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: -15px;
+  padding: 22px 18px 25px;
+
+  cursor: pointer;
+
+  height: 34px;
+
+  > span {
+    color: var(--text);
+    font-size: 14px;
+
+    margin-left: 8px;
+  }
+
+  &.active {
+    border-bottom: 2px solid var(--highlight);
+
+    > span {
+      font-weight: bold;
+    }
+
+    > .tabIcon {
+      fill: var(--primary);
+    }
+
+    > .packages > path {
+      fill: var(--primary);
+    }
+  }
+`;
 
 const iconCSS = css`
-  width: 32px;
-  height: 32px;
+  height: 20px;
+  width: 20px;
+
+  flex-shrink: 0;
+
+  fill: var(--light-text);
 `;
 
 export const BookIcon = styled(Book)`
@@ -28,10 +72,16 @@ export const RepositoriesIcon = styled(Repositories)`
   ${iconCSS}
 `;
 
-export const ProjectsIcon = styled(Projects)`
+export const ProjectsIcon = styled(Chart)`
   ${iconCSS}
+
+  transform: rotate(180deg);
 `;
 
 export const PackagesIcon = styled(Cube)`
   ${iconCSS}
+
+  > path {
+    fill: var(--light-text);
+  }
 `;
