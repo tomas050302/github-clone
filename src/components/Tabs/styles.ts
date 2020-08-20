@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { Book, Repositories, Chart, Cube } from '../../styles/Icons';
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 99vw;
 
   height: 34px;
   margin-top: 42px;
@@ -18,10 +18,10 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  margin-left: 15px;
+  margin-left: 25px;
 
   @media (min-width: 768px) {
-    margin-left: calc(min(20%, 320px) + 60px);
+    margin-left: calc(min(20%, 320px) + 100px);
   }
 `;
 

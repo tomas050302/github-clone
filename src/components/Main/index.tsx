@@ -4,12 +4,13 @@ import {
   Container,
   PinsRow,
   CardsContainer,
-  Card,
   ContributionsContainer,
   ContributionGraph,
   ContributionYears,
   Year,
 } from './styles';
+
+import Card from '../Card';
 
 const Main: React.FC = () => {
   return (
@@ -21,12 +22,12 @@ const Main: React.FC = () => {
       </PinsRow>
 
       <CardsContainer>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card name='test' description='A test project' technology='js' />
+        <Card name='test' description='A test project' technology='js' />
+        <Card name='test' description='A test project' technology='js' />
+        <Card name='test' description='A test project' technology='js' />
+        <Card name='test' description='A test project' technology='js' />
+        <Card name='test' description='A test project' technology='js' />
       </CardsContainer>
 
       <ContributionsContainer>

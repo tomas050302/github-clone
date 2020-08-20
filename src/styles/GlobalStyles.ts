@@ -34,6 +34,7 @@ export default createGlobalStyle`
     --highlight: #f9826c;
     --text: #1b1f23;
     --light-text: #e1e4e8;
+    --light-link: #717880;
     --icon: #959da5;
     --icon-light: #6a737d;
     --lines: #d1d5da;

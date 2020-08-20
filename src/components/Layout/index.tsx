@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Wrapper } from './styles';
+import { Container, Wrapper, MainContainer } from './styles';
 
 import TopBar from '../TopBar';
 import Tabs from '../Tabs';
@@ -12,9 +12,11 @@ const Layout: React.FC = () => {
     <Container>
       <TopBar />
       <Wrapper>
-        <UserInformation />
-        <Tabs />
-        <Main />
+        <MainContainer>
+          <UserInformation />
+          <Tabs />
+          <Main />
+        </MainContainer>
       </Wrapper>
     </Container>
   );
