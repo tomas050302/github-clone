@@ -19,3 +19,5 @@ export { Cube } from 'styled-icons/ionicons-outline/';
 export { EmojiSmileUpsideDown as Emoji } from 'styled-icons/bootstrap/';
 
 export { Group } from 'styled-icons/remix-line/';
+
+export { GitFork as Fork } from 'styled-icons/octicons/';

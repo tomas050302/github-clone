@@ -38,6 +38,7 @@ export const CardsContainer = styled.div`
   width: 100%;
 
   display: flex;
+  justify-items: first baseline;
   flex-wrap: wrap;
 `;
 

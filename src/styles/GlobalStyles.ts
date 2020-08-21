@@ -39,6 +39,7 @@ export default createGlobalStyle`
     --icon-light: #6a737d;
     --lines: #d1d5da;
     --secondary-text: #666;
+    --third-text: #586069;
     --link-background: rgba(209,213,218,.5);
     --button-background: rgba(27,31,35,.15);
     --input-background: rgba(225, 228, 232, 0.2); 

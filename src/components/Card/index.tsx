@@ -3,10 +3,12 @@ import React from 'react';
 import {
   Container,
   FirstRow,
+  Title,
   RepositoryIcon,
   Name,
   Description,
   Stats,
+  Technology,
   TechnologyColor,
   TechnologyName,
   Stat,
@@ -34,24 +36,26 @@ const Card: React.FC<Props> = ({
   return (
     <Container>
       <FirstRow>
-        <RepositoryIcon />
-        <Name>{name}</Name>
+        <Title>
+          <RepositoryIcon />
+          <Name>{name}</Name>
+        </Title>
         <DraggableIcon />
       </FirstRow>
 
       <Description>{description}</Description>
 
       <Stats>
-        <TechnologyColor />
-        <TechnologyName>{technology}</TechnologyName>
-
+        <Technology>
+          <TechnologyColor technology={technology} />
+          <TechnologyName>{technology}</TechnologyName>
+        </Technology>
         {stars && (
           <Stat>
             <StarIcon />
             <span>{stars}</span>
           </Stat>
         )}
-
         {forks && (
           <Stat>
             <ForkIcon />

@@ -22,12 +22,34 @@ const Main: React.FC = () => {
       </PinsRow>
 
       <CardsContainer>
-        <Card name='test' description='A test project' technology='js' />
-        <Card name='test' description='A test project' technology='js' />
-        <Card name='test' description='A test project' technology='js' />
-        <Card name='test' description='A test project' technology='js' />
-        <Card name='test' description='A test project' technology='js' />
-        <Card name='test' description='A test project' technology='js' />
+        <Card
+          name='test'
+          description='A test project'
+          technology='JavaScript'
+          stars={5}
+          forks={2}
+        />
+        <Card
+          name='test'
+          description='A test project'
+          technology='typescript'
+        />
+        <Card
+          name='test'
+          description='A test project'
+          technology='JavaScript'
+        />
+        <Card name='test' description='A test project' technology='html' />
+        <Card
+          name='test'
+          description='A test project'
+          technology='JavaScript'
+        />
+        <Card
+          name='test'
+          description='A test project'
+          technology='JavaScript'
+        />
       </CardsContainer>
 
       <ContributionsContainer>
