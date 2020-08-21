@@ -10,7 +10,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
+  justify-content: space-between;
+
   width: min(444px, 45%);
+  min-height: 115px;
+
   border: 1px solid var(--light-text);
   border-radius: 8px;
 
@@ -56,6 +60,8 @@ export const Name = styled.span`
 export const Description = styled.span`
   color: var(--secondary-text);
   font-size: 12px;
+
+  margin-top: -15px;
 `;
 
 export const Stats = styled.div`

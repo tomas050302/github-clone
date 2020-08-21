@@ -32,14 +32,14 @@ const Main: React.FC = () => {
         <Card
           name='test'
           description='A test project'
-          technology='typescript'
+          technology='TypeScript'
         />
         <Card
           name='test'
           description='A test project'
           technology='JavaScript'
         />
-        <Card name='test' description='A test project' technology='html' />
+        <Card name='test' description='A test project' technology='HTML' />
         <Card
           name='test'
           description='A test project'
